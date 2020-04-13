@@ -1,0 +1,14 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.cat{
+    background-image:url(images/email.jpg);
+    padding: 100px;
+    /* background-size: contain; */
+    background-size: 700px;
+    /* background-position: center;*/
+    background-repeat: repeat-x;
+}
