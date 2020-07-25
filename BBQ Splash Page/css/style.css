@@ -21,6 +21,12 @@ color: #ffffff;
 margin: 2em 0;
 }
 
+strong{
+font-weight: 400;
+}
+
+/*  paragraph that goes right after the h1 will be orange */ 
+/* JSON sibling combinator */
 h1 + p {
 color: #F18119;
 font-weight: 900;
@@ -37,10 +43,8 @@ h2 + p {
     color: #F18119;
     font-weight: 900;
     font-size: 1rem;
-    text-transform: uppercase;
     margin-top:0;
     text-transform: uppercase;
- 
 }
 
 .top-text {
@@ -53,13 +57,9 @@ h2 + p {
 
 .fine-print{
     font-size: 0.625rem;
+    /* makes small text a lot more readable */ 
     letter-spacing: 1px;
 }
-
-strong {
-    font-weight: 900;
-}
-
 
 /* =================
    Intro section 
@@ -67,13 +67,15 @@ strong {
 
 .intro {
     background-color: #404040;
+    /* if the image does not load (suggested) */
     background-image: url(../images/ribs.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
-/* with the display flex collapsing margins no longer collapse*/
+    justify-content: space-between;
+    min-height: 50vh;
 }
 
 /* =================
@@ -105,5 +107,11 @@ h2, h1+p {
     width: 50%;
     min-height: 100vh;
 }
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
