@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      form {
+        background: #efefef;
+        padding: 2em;
+      }
+      input[type="text"] {
+        margin-bottom: 1em;
+        padding: 0.25em;
+        border: 0;
+        background: lightblue;
+      }
+      button {
+        background: #333;
+        color: white;
+        border: 0;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #404040;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      forms!
+    </h1>
+    <form action="#" method="post">
+      <input type="text" />
+      <input type="password" />
+      <input type="radio" />
+      <input type="checkbox" />
+      <input type="email" />
+      <input type="color" />
+      <input type="date" />
+      <input type="file" />
+
+      <label for="fname"> First Name: </label>
+      <input id="fname" type="text" />
+      <br />
+      <label for="lname"> Last Name: </label>
+      <input id="lname" type="text" />
+      <br />
+      <label for="email"> Email: </label>
+      <input id="email" type="text" />
+    </form>
+
+    <h1>option #2</h1>
+    <form action="#" method="post">
+      <label>
+        First name:
+        <input type="text" />
+      </label>
+      <br />
+      <label for="lname">Last name:</label>
+      <input id="lname" type="text" />
+      <br />
+      <label for="email">Email:</label>
+      <input id="email" type="text" />
+      <button type="submit">Send away!</button>
+      <button type="reset">Reset</button>
+      <input type="text" required />
+      <input type="text" value="hello" />
+      <input type="text" placeholder="hello" />
+      <input type="text" disabled />
+    </form>
+  </body>
+</html>
