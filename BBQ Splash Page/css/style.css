@@ -60,7 +60,6 @@ h2 + p {
     order: -1;
     border-top: 5px solid #F18119;
     border-image-slice: linear-gradient(to left, #ff713b, #ffa51d) 1;
-    
 }
 
 .fine-print{
@@ -74,9 +73,9 @@ h2 + p {
    ================= */
 
 .intro {
-    background-color: #404040;
-    /* if the image does not load (suggested) */
-    background-image: url(../images/ribs.jpg);
+    background-image: url(../images/ribs.jpg), linear-gradient(45deg,red, blue);
+    /* background-color: #ff0000; */
+    background-blend-mode: screen;
     background-size: cover;
     background-position: center;
     padding: 0 .5em 2em;
