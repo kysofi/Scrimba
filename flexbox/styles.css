@@ -9,30 +9,36 @@ body {
 
 .flex-container {
     border: 10px solid #F9F871;
-    max-width: 700px;
+    width: 80%;
     margin: 0 auto;
     padding: .25em;
     
-
-    min-height: 300vh;
-    
     display: flex;
-    justify-content: center;
-    /* align-items: baseline; */
-    /* align-content: flex-start; */
-    flex-wrap: wrap;
-    align-items: flex-end;
-    align-content: space-between;
-
 }
-
-.big {
-    font-size: 2em;
-} 
 
 .flex-item {
     background: #8BEE86;
-    margin: 25px;
-    padding: 25px;
+    margin: .5em;
+    padding: .5em;
     color: #424656;
+
+    width: 200px;
+}
+
+.flex-item-1{
+    background: plum;
+    /* flex-grow: 1; */
+    flex-shrink: 4;
+}
+
+.flex-item-2{
+    /* flex-grow: 0; */
+    flex-shrink: 1;
+    /* default */
+}
+
+.flex-item-3{
+    /* flex-grow: 5; */
+    flex-shrink: 0;
+    /* not gonna shrink */
 }
