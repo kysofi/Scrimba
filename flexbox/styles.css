@@ -34,9 +34,18 @@ body {
 
 .flex-item-1 {
     background: plum;
-    flex-basis: 100px;
-    min-width: 200px;
-    max-height: 25px;
+    /* flex: grow shrink basis */
+    flex: 0 1 400px;
+    /* basis = auto, it's going to look for a width:200px */
+    flex: 1 0;
+    /* grow: 1, flex-basis: 0 */
+    flex: 400px;
+    /* flex basis  */
+    flex: 0 1 auto;
+    /* simply a default */
+    flex: auto;
+    /* same as flex: 1 1 auto */
+   
 }
 
 .flex-item-2 {
