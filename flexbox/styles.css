@@ -14,6 +14,7 @@ body {
     padding: .25em;
     
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     height: 50vh;
 }
@@ -29,7 +30,6 @@ body {
 
 .flex-item-1 {
     background: plum;
-    align-self: stretch;
 }
 
 .flex-item-2 {
@@ -37,5 +37,6 @@ body {
 }
 
 .flex-item-3 {
-    align-self: flex-end;
+   margin-top: auto;
+   margin-bottom: auto;
 }
